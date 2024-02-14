@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    /* Colors */
+    --primary-color: #6159FE;
+    --secondary-color: #9B3BDD;
+    --white: #FFF;
+    --black: #000;
+    /* Fonts */
+    --primary-font: "Montserrat", sans-serif;
+    --secondary-font: "Dosis", sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: var(--primary-font);
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    min-height: calc(100dvh - 8rem);
+    padding: 4rem 2rem;
+    background-image: url(images/background-space.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.error-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.error-text h1 {
+    font-family: var(--secondary-font);
+    font-size: 10rem;
+    font-weight: 700;
+}
+
+.btn-go-back {
+    width: 200px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 700;
+    border: 1px solid transparent;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: .7s;
+}
+
+.btn-go-back:hover {
+    background-color: var(--white);
+    color: var(--secondary-color);
+}
+
+.credits {
+    width: 200px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.credits a {
+    color: var(--white);
+    font-weight: 600;
+}
